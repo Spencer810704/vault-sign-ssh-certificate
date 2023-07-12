@@ -12,6 +12,8 @@ Table of contents
 但本人比較懶惰 , 每一次都需要開啟 Hashicorp Vault 頁面在點 Google OAuth 驗證 , 並將簽發的證書貼到我們的 SSH Certificate中
 太過於麻煩 , 故寫了一個小工具只需要執行腳本以及點擊 Google OAuth 選擇對應帳號後 , 通過驗證會將簽發的證書更新至本地。
 
+<br>
+
 # 安裝
 
 ```
@@ -23,6 +25,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 ```
+
+<br>
 
 ## 配置範例及各項用途說明
 
@@ -50,6 +54,7 @@ pip install -r requirements.txt
 - `public_key_path`
 
 
+<br>
 
 
 # 執行及驗證
@@ -62,4 +67,6 @@ python main.py
 ssh-keygen -L -f <ssh-certificate-path>
 
 ```
+
+<br>
 
